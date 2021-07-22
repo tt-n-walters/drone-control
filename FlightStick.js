@@ -6,7 +6,7 @@ const { axes, buttons } = require("./mappings");
 class FlightStick {
     constructor() {
         this.emitter = new events.EventEmitter();
-        this.POLL_INTERVAL = 100;
+        this.POLL_INTERVAL = 50;
         this.NOISE_THRESHOLD = 0.1;
         this.states = {};
         for (const input of Object.values(axes).concat(Object.values(buttons))) {
