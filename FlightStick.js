@@ -12,7 +12,6 @@ class FlightStick {
         for (const input of Object.values(axes).concat(Object.values(buttons))) {
             this.states[input] = undefined;
         }
-        this.init();
     }
 
     on(event, callback) {
