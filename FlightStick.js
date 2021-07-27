@@ -18,7 +18,7 @@ class FlightStick {
         this.emitter.on(event, callback);
     }
 
-    async init() {
+    async initialise() {
         const browser = await puppeter.launch();
         const page = await browser.newPage();
         page.on("console", (msg) => {
